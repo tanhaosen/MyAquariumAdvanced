@@ -4,8 +4,8 @@ import java.util.Random;
 public class MyFood {
 	public int x;
 	public int y;
-	public int diameter;
-	public Color color;
+	public int diameter = 20;
+	public Color color = Color.blue;
 	
 	public MyFood(int screenWidth, int screenHeight) {
 		choseRandomLocation(screenWidth, screenHeight);

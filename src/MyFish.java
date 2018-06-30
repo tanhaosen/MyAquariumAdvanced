@@ -6,13 +6,13 @@ import javax.imageio.ImageIO;
 
 public class MyFish {
 	private final String IMG_NAME = "blueFishRight.png";
-	private BufferedImage img;
+	public BufferedImage img;
 	private Boolean isLeftImgShown;
 	
 	public MyFish() {
 		try {
-			img = ImageIO.read(new File(IMG_NAME));
-			isLeftImgShown = false;
+			this.img = ImageIO.read(new File(IMG_NAME));
+			this.isLeftImgShown = false;
 		} catch(IOException e){
 			println("Can not read the Fish image. ");
 		}
